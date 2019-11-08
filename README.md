@@ -14,7 +14,7 @@ User story
 ```
 bundle
 ```
-### To set uo the database
+### To set up the database
 +
 + Connect to `psql` and create the `bookmark_manager` databse:
 +
