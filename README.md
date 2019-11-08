@@ -16,19 +16,19 @@ bundle
 ```
 ### To set up the database
 +
-+ Connect to `psql` and create the `bookmark_manager` databse:
-+
++ Connect to `psql`
++ Create the `bookmark_manager` database:
 + ```
 + CREATE DATABASE bookmark_manager;
 + ```
-+
-+ To set up the appropriate tables, connect to the database in `sql` and run the SQL scripts in the `db/migrations` folder in the given order.
-+
++ To set up the appropriate tables, connect to the database in `sql` using the psql command `\c bookmark_manager;` and then
++  Run the SQL scripts in the `db/migrations` folder in the given order.
++ Run the query saved in the file: `01_create_bookmarks_table.sql`
+
 ### To run the Bookmark Manager app:
 ```
 rackup -p 3000
 ```
-
 - To view bookmarks, navigate to `localhost:3000/bookmarks`.
 
 ### To run tests:
