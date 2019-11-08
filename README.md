@@ -3,7 +3,7 @@
 User story
 
 ```
-As a Makers Student
+  As a Makers Student
   So that I can see a list of my snazziest bookmarks
   I'ld like the website to show me all of them on one page.
   ```
@@ -11,3 +11,9 @@ As a Makers Student
 ## Domain Model:
 ![Bookmark_Mgr_Domain_model](https://user-images.githubusercontent.com/33905131/68308600-09120080-00a5-11ea-8c26-349993ed7b78.jpg)
 
+## Ports used:
+rackup -p 3000
+
+```
+To view bookmarks, navigate to `localhost:3000/bookmarks`
+```
