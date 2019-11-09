@@ -29,11 +29,13 @@ bundle
 + CREATE TABLE bookmarks (id SERIAL PRIMARY KEY, url VARCHAR(60));
 ```
 
+### Created an environment variable with: `echo "export ENVIRONMENT=test" >> ~/.bach_profile`
+
 ### To run the Bookmark Manager app:
 ```
-rackup -p 3000
+ruby app.rb
 ```
-- To view bookmarks, navigate to `localhost:3000/bookmarks`.
+- To view bookmarks, navigate to `localhost:4567/bookmarks`.
 
 ### To run tests:
 + install capybara, rspec, pg
