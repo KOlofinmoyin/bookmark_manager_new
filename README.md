@@ -6,6 +6,10 @@ User story
   As a Makers Student
   So that I can see a list of my snazziest bookmarks
   I'ld like the website to show me all of them on one page.
+
+  As a user
+  So I can store bookmark data for later retrieval
+  I want to add a bookmark to Bookmark Manager
   ```
 
 ## Domain Model:
@@ -15,7 +19,6 @@ User story
 bundle
 ```
 ### To set up the database
-+
 + Connect to `psql` and create the `bookmark_manager` and  `bookmark_manager_test` databases:
 
 + ```
@@ -29,9 +32,11 @@ bundle
 + CREATE TABLE bookmarks (id SERIAL PRIMARY KEY, url VARCHAR(60));
 ```
 
-### Created an environment variable with: `echo "export ENVIRONMENT=test" >> ~/.bach_profile`
+### Created an environment variable with:
++ `echo "export ENVIRONMENT=test" >> ~/.bash_profile`
 
 ### To run the Bookmark Manager app:
++
 ```
 ruby app.rb
 ```
